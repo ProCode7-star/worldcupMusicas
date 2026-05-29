@@ -1,0 +1,64 @@
+<style>
+    /* ======================================================== */
+    /* ☀️ ESTILO POR DEFECTO (MODO CLARO)                        */
+    /* ======================================================== */
+    body {
+        background-color: #ffffff; /* Fondo blanco */
+        color: #1a1a1a; /* Letras oscuras */
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+        padding: 20px;
+        margin: 0;
+        transition: background-color 0.3s, color 0.3s; /* Transición suave */
+    }
+
+    /* Título principal "músicas mundial 2026" en modo claro */
+    h1:first-of-type {
+        color: #b8860b; /* Dorado un poco más oscuro para que se lea en fondo blanco */
+        font-size: 2.2rem;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+    }
+
+    /* Tus títulos de Portugal y Argentina en modo claro */
+    h1 {
+        color: #1a1a1a;
+        font-size: 1.4rem;
+        margin-top: 40px;
+        margin-bottom: 15px;
+    }
+
+    /* Reproductores de audio en modo claro */
+    audio {
+        background: #f1f5f9; 
+        border-radius: 12px; 
+        padding: 5px;
+        width: 90%;
+        max-width: 400px; 
+    }
+
+    /* ======================================================== */
+    /* 🌙 AUTOMÁTICO: CAMBIA A ESTO SI EL MODO OSCURO ESTÁ ACTIVO */
+    /* ======================================================== */
+    @media (prefers-color-scheme: dark) {
+        body {
+            background-color: #0d1117; /* Fondo oscuro pro */
+            color: #ffffff; /* Letras blancas */
+        }
+
+        /* El título del mundial cambia a dorado brillante sobre negro */
+        h1:first-of-type {
+            color: #d4af37; 
+        }
+
+        /* Tus títulos de música cambian a blanco sólido */
+        h1 {
+            color: #ffffff;
+        }
+
+        /* Los reproductores se adaptan al fondo oscuro */
+        audio {
+            background: #1f2937; 
+        }
+    }
+</style>
